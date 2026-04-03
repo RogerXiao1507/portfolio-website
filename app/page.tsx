@@ -24,6 +24,7 @@ const project = {
   ],
   github: "https://github.com/RogerXiao1507",
   live: "https://rolepilot-nu.vercel.app/",
+  agentLive: "https://cf_ai_rolepilot_agent.xiaoroger1507.workers.dev/",
 };
 
 const skills = [
@@ -151,8 +152,8 @@ export default function PortfolioSite() {
                     "Semantic retrieval with RAG and project evidence chunking",
                   ],
                   [
-                    "Output",
-                    "Recruiter-ready resume generation in DOCX and PDF formats",
+                    "Agent",
+                    "Cloudflare Agents based chat copilot with persistent role context and AI resume fit guidance and interview prep",
                   ],
                 ].map(([title, desc], i) => (
                   <motion.div
@@ -187,7 +188,7 @@ export default function PortfolioSite() {
                 A project I am currently building and continuing to improve.
               </h2>
               <p className="max-w-md text-sm leading-6 text-white/55">
-                Focused on one main product that brings together retrieval, resume tailoring, and workflow design.
+                Focused on one main product that brings together retrieval, resume tailoring, application tracking, and a Cloudflare based chat copilot.
               </p>
             </div>
           </motion.div>
@@ -248,7 +249,16 @@ export default function PortfolioSite() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-black transition hover:scale-[1.02]"
                 >
-                  Try it out
+                  Try RolePilot
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+                                <a
+                  href={project.agentLive}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.03] px-4 py-2 text-sm text-white/85 transition hover:bg-white/[0.07]"
+                >
+                  Try Agent
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
               </div>
