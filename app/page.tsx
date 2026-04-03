@@ -23,6 +23,7 @@ const project = {
     "Semantic Retrieval",
   ],
   github: "https://github.com/RogerXiao1507",
+  live: "https://rolepilot-nu.vercel.app/",
 };
 
 const skills = [
@@ -233,10 +234,22 @@ export default function PortfolioSite() {
               <div className="flex flex-wrap gap-3">
                 <a
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.03] px-4 py-2 text-sm text-white/85 transition hover:bg-white/[0.07]"
                 >
                   GitHub
                   <Globe className="h-4 w-4" />
+                </a>
+
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-black transition hover:scale-[1.02]"
+                >
+                  Try it out
+                  <ArrowUpRight className="h-4 w-4" />
                 </a>
               </div>
             </div>
